@@ -16,6 +16,7 @@
   },
   "require": {
     "php": "^8.5",
+    "comphp/config": "^0.3",
     "comphp/database": "^0.3"
   },
   "require-dev": {

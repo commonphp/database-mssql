@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://commonphp.org/schemas/database/mssql-connection.schema.json",
+  "title": "Microsoft SQL Server Connection Configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "username": {
+      "type": "string",
+      "default": "sa"
+    },
+    "password": {
+      "type": "string",
+      "default": ""
+    },
+    "Server": {
+      "type": "string"
+    },
+    "App": {
+      "type": "string"
+    },
+    "Database": {
+      "type": "string",
+      "minLength": 1
+    },
+    "TrustServerCertificates": {
+      "type": "boolean",
+      "default": false
+    },
+    "Encrypt": {
+      "type": "boolean",
+      "default": false
+    },
+    "LoginTimeout": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "required": [
+    "username",
+    "password",
+    "Server",
+    "Database"
+  ]
+}
